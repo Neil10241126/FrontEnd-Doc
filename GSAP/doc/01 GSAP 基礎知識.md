@@ -32,6 +32,9 @@ GSAP 寫 transform
 { rotate: 360, x: 10, yPercent: 50 }
 ```
 ## GSAP、CSS 語法比較表
+
+> GSAP 使用 CSS 組字屬性須以小駝峰撰寫 [backgroundColor]()、[transformOrigin]()
+
 | GSAP | CSS | 定義 |
 | :---         |     :---      | :--- |
 | x : 100 | transform : translateX ( 100 px ) | 水平移動 100 px |
