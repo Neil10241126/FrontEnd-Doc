@@ -33,7 +33,7 @@ GSAP 寫 transform
 ```
 ## GSAP、CSS 語法比較表
 | GSAP | CSS | 定義 |
-| :---         |     :---:      | :--- |
+| :---         |     :---      | :--- |
 | x : 100 | transform : translateX ( 100 px ) | 水平移動 100 px |
 | y : 100 | transform : translateY ( 100 px ) | 垂直移動 100 px |
 | xPercent : -50 | transform : translateX ( - 50% ) | 水平移動 50% |
