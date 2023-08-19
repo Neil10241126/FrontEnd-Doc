@@ -27,7 +27,7 @@ export function add(number) {
 
 ```
 
-建立 [add.test.js]() 測試檔，測試 [add()]() 函式
+建立 [math.test.js]() 測試檔，測試 [add()]() 函式
 
 ```js
 import { test, expect } from 'vitest'
@@ -36,14 +36,14 @@ import { test, expect } from 'vitest'
 import { add } from './math'
 // 引入要測試的函式 add()
 
-test('測試1+2+3是否為6', () => {
+test('測試 1+2+3 是否為 6', () => {
   const result = add([1, 2, 3]);
 
   expect(result).toBe(6)
   // 斷言後方加上 vitest 所提供的方法，這裡使用 .toBe()
 })
 // ('')引號內撰寫本次測試的期望跟目的，簡述即可。
-//  第二個參數撰寫測試函式
+//  第二個參數撰寫測試函式，使用箭頭函式。
 ```
 
 接下來添加測試指令至你的 [package.json]() 文件中 :
@@ -62,3 +62,14 @@ test('測試1+2+3是否為6', () => {
  - ```vitest --run``` 運行一次測試 (沒有監聽模式)。
  - ```vitest --run --reporter verbose``` 運行一次測試，顯示詳細測試目錄。
  - ```vitest``` 運行測試，並且開啟監聽模式 ( 程式碼更新則自動運行測試 )。
+
+
+## 運行測試
+
+執行以下程式碼來運行測試
+
+```json
+npm test
+```
+
+![Alt text](image-1.png)
