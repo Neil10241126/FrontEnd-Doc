@@ -1,6 +1,6 @@
 ### JSON-Server 使用筆記
 ---
-
+[Github 說明](https://github.com/typicode/json-server)
 
 ## 開始
 
