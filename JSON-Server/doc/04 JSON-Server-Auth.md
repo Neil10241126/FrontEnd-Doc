@@ -125,7 +125,7 @@ PATCH /users/1
 ```http
 200 OK
 {
-  data: {
+  "data": {
     "id": 1,
     "email": "olivier@mail.com",
     "password": "xxx.xxx.xxx"
@@ -148,7 +148,7 @@ PATCH /600/users/1
   "password": "changePassw0rd"
 },
 {
-  headers: {
+  "headers": {
     "authorization": `Bearer ${token}`
   },
 }
@@ -159,7 +159,7 @@ PATCH /600/users/1
 ```http
 200 OK
 {
-  data: {
+  "data": {
     "id": 1,
     "email": "olivier@mail.com",
     "password": "xxx.xxx.xxx"
