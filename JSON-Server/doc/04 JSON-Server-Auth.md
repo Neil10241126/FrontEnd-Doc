@@ -145,12 +145,14 @@ PATCH 資料中需夾帶變更的 **`password`** 必要屬性。
 ```http
 PATCH /600/users/1
 {
-  "password": "changePassw0rd"
-},
-{
-  "headers": {
-    "authorization": `Bearer ${token}`
+  {
+    "password": "changePassw0rd"
   },
+  {
+    "headers": {
+      "authorization": "Bearer ${token}"
+    },
+  }
 }
 ```
 
