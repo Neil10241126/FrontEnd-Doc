@@ -1,7 +1,10 @@
-# 🔐JSON Server Auth
+# 🔐JSON Server Auth 身分驗證
 ---
 
-**[Github](https://github.com/jeremyben/json-server-auth)**
+- _**[GitHub - JSON Server](https://github.com/typicode/json-server)**_
+- _**[GitHub - JSON Server Auth](https://github.com/jeremyben/json-server-auth)**_
+
+利用 JSON Server 及 JSON Server Auth 來設計虛假的 **身分驗證** 及 **授權流程** 。
 
 ## 開始
 
@@ -49,7 +52,7 @@ POST 資料中需夾帶 **`email`** 和 **`password`** 兩個必要屬性。
 > 可以額外增加其他屬性資料，如果你有這個需求。
 
 ```http
-POST -  /register
+POST /register
 {
   "email": "olivier@mail.com",
   "password": "bestPassw0rd"
@@ -70,7 +73,7 @@ POST -  /register
 POST 資料中需夾帶 **`email`** 和 **`password`** 兩個必要屬性。
 
 ```http
-POST -  /login
+POST /login
 {
   "email": "olivier@mail.com",
   "password": "bestPassw0rd"
