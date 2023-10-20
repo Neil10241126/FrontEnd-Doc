@@ -1,0 +1,93 @@
+01 基礎類型
+---
+
+## 原始資料類型
+
+原始資料型別分別為 : `string`、`number`、`boolean`、`undefined`、`null`。
+
+### 字串類型
+
+```js
+let myName: string = 'Neil';
+let myAge: string;
+```
+
+### 數值類型
+
+```js
+let num: number = 100;
+let price: number;
+```
+
+### 布林值
+
+```js
+let isTure: boolean = true;
+let isFalse: boolean;
+```
+
+### Undefined、Null 類型
+
+```js
+let u: undefined = undefined;
+let n: null = null;
+```
+
+## any 類型 (任意值)
+
+允許賦值對象中途改變型別，但等同於捨棄 `TS類型檢查` 的功能。
+
+```js
+let myAge: any = 17;
+myAge = '17';
+myAge = true;
+```
+
+## Array 陣列類型
+
+TS定義陣列類型的方法有很多 :
+
+```js
+// 透過型別推論。
+const array1 = [1, 2, 3];
+
+// 型別 + 中括號表示。
+const array3: string[] = []
+
+// | 宣告聯合型別。
+const array2: (number | string)[] = [1, 2, '3'];
+
+// 陣列泛型。
+const array4: Array<string | number> = []
+```
+
+## Tuple 元組類型
+
+透過定義每個類型來保持資料的建立規則 :
+
+```js
+// 指定出現的類型，且固定數量並保持順序。
+const tuple1: [number, string, boolean] = [100, 'Neil', true];
+
+// 也可以宣告二維陣列的元組。
+const tuple2: [number, boolean][] = [[100, true], [59, false]];
+```
+
+## Object 物件類型
+
+物件的直接定義方式較為單純，進階用法是使用 *`type`* 、 *`inteface`* 來定義。
+
+```js
+// 透過型別推論
+let obj1 = {
+  name: 'Neil', 
+  age: 20
+};
+
+// 大括號內加上屬性及類型。 ※ 缺點 : 容易越寫越長。為避免這個問題會使用 interface 來定義。
+let obj2: { name: string, age: (number | string)};
+
+// 某些屬性如果不一定要顯示可以使用 ? 來表示可選屬性。
+let obj3: { name: string, age?: number};
+
+```

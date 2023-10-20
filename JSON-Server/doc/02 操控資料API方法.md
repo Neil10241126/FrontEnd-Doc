@@ -89,7 +89,7 @@ GET /products?_sort=price&_order=asc
 GET /products?_sort=price,views&_order=desc,asc
 ```
 
-### 區間範圍 Operators [(*代補充)]()
+### 區間範圍 Operators 
 
 使用 **` _gte `** 大於 或 **` _lte `** 小於來設定範圍。
 
