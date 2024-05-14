@@ -8,6 +8,9 @@
     <li><a href="doc/02%20增加更多測試及修正.md">02 增加更多測試及修正測試</a></li>
     <li><a href="doc/03%20describe%20將測試分類.md">03 describe 將測試分類</a></li>
     <li><a href="doc/04%20集成測試.md">04 集成測試</a></li>
+    <li><a href="doc/05%20了解測試環境設定檔.md">05 了解測試環境設定檔</a></li>
+    <li><a href="doc/06%20Matcher%20語法.md">06 Matcher 語法</a></li>
+    <li><a href="doc/07%20元件測試.md">07 元件測試</a></li>
   </ul>
 
 </details>
@@ -17,7 +20,7 @@
 
 安裝 Vitest
 
-```js
+```bash
 npm install -D vitest
 ```
 
@@ -79,8 +82,8 @@ test('測試 1+2+3 是否為 6', () => {
 
 執行以下程式碼來運行測試
 
-```json
+```bash
 npm test
 ```
 
-![Alt text](image-1.png)
+![Alt text](img/image-0.png)

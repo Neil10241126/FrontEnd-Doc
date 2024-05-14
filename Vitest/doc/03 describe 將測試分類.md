@@ -5,11 +5,11 @@
 
 一個測試檔會包含許多單元，而每個單元會有許多測試，如果這些測試通通執行，系統會條列顯示所有測試內容，可一旦測試體非常龐大，發生錯誤的測試就很難推測是哪個單元。
 
-![Alt text](image-2.png)
+![Alt text](../img/image-2.png)
 
 因此，我們需要使用 ```describe``` 來分類每個測試是針對哪個 ```Function``` 。
 
-![Alt text](image-3.png)
+![Alt text](../img/image-3.png)
 
 ### 語法
 
