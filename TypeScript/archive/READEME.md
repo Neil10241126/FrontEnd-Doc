@@ -1,28 +1,24 @@
 # TypeScrpte 學習筆記
 ---
 
-**專寫日期 : 2024/12/06**
-
-**相關連結 : [官網 TypeScript 安裝說明](https://www.typescriptlang.org/download/)**
-
 ## 安裝 TypeScript
 
-輸入命令將 ts 安裝於專案環境。
+輸入命令來進行 ts 全域安裝。
 
 ```base
-npm install typescript --save-dev
+npm install -g typescript
 ```
 
 查詢 ts 版本並確認是否安裝。
 
 ```base
-npx tsc -v
+tsc -v
 ```
 
 查詢 ts 指令目錄 **`(確認 typescript 可以操作的指令)`**。
 
 ```base
-npx tsc -help
+tsc -help
 ```
 
 ## 建立第一個 TypeScript 檔案 
@@ -31,39 +27,25 @@ npx tsc -help
 
 ## 編譯 TypeScript 檔案 
 
+編譯方式為 `tsc` 命令加上 `.ts` 字尾的檔案名稱。
+
 > 編譯後會額外產生同樣檔名的 JavaScript 檔案。
 
-### 全部編譯
-
-執行以下命令將全部 `.ts` 檔案進行編譯。
-
-```
-npx tsc
-```
-
-### 單一檔案編譯
-
-編譯方式為 `npx tsc` 命令加上 `.ts` 字尾的檔案名稱。
-
-
 ```base
-npx tsc index.ts
+tsc index.ts
 ```
-
-> [!WARNING]
-> 編譯單一檔案會自動忽略 tsconfig.json 設定，若需維持設定，請使用 npx tsc 指令來編譯，詳細可參考 [stack overflow](https://stackoverflow.com/questions/64934660/how-can-i-set-the-default-target-es-version-for-the-typescript-compiler-tsc)
 
 ## tsconfig.json 設定檔 
 
-**_[TSConfig 配置設定](https://aka.ms/tsconfig)_** (設定檔屬性的詳細介紹)。
+**_[TSConfig 官網](https://www.typescriptlang.org/tsconfig)_** (設定檔屬性的詳細介紹)。
 
 輸入以下指令來初始化 tsconfig 檔案。
 
 ```base
-npx tsc --init
+tsc --init
 ```
 
-TSconfig 常用的相關設定 :
+TSconfig 重要的相關設定 :
 
 ```json
 {
