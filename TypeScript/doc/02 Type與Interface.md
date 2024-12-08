@@ -1,6 +1,12 @@
 # 02 Type 與 Interface
 ---
 
+**專寫日期 : 2024/12/07**
+
+**相關連結 : [TS 新手指南-介面](https://willh.gitbook.io/typescript-tutorial/advanced/class-and-interfaces)**
+
+---
+
 ##### 目錄
 - [Type 型別別名](#type-型別別名)
   - [【基礎】Type 定義](#基礎type-定義)
@@ -10,6 +16,8 @@
   - [【進階】Interface 擴充](#進階interface-擴充)
   - [【進階】Interface 合併](#進階interface-合併)
   - [【進階】declare module 擴充外部 Interface](#進階declare-module-擴充外部-interface)
+
+---
 
 
 ## Type 型別別名
