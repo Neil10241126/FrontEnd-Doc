@@ -1,5 +1,20 @@
 # Router
 
+---
+
+**專寫日期 : 2024/12/19**
+
+**相關連結 : []()**
+
+---
+
+##### 目錄
+- [安裝](#安裝-react-router-dom)
+- [資料夾結構](#資料夾結構)
+- [引入-router-相關組件](#引入-router-相關組件)
+
+---
+
 ## 安裝 react-router-dom
 
 ```bash
@@ -79,19 +94,19 @@ function App() {
   return (
     <>
       {/* 定義內部路由 */}
-			<Routes>
-				{/* 前台 FrontLayout */}
-				<Route path='/' element={ <FrontLayout/> }>
-					<Route index element={ <Index/> }></Route>
-					<Route path="about" element={ <About/> }></Route>
-				</Route>
-
-				{/* 後台 AdminLayout */}
-				<Route path="/admin" element={ <AdminLayout/> }>
-					<Route index element={ <Home/> }></Route>
-					<Route path=":user" element={ <User/> }></Route>
-				</Route>
-			</Routes>
+      <Routes>
+        {/* 前台 FrontLayout */}
+        <Route path='/' element={ <FrontLayout/> }>
+          <Route index element={ <Index/> }></Route>
+          <Route path="about" element={ <About/> }></Route>
+        </Route>
+        
+        {/* 後台 AdminLayout */}
+        <Route path="/admin" element={ <AdminLayout/> }>
+          <Route index element={ <Home/> }></Route>
+          <Route path=":user" element={ <User/> }></Route>
+        </Route>
+      </Routes>
     </>
   )
 }
@@ -106,21 +121,21 @@ export default App
 import { Outlet } from "react-router-dom"
 
 export default function FrontLayout() {
-	return (
-		<>
-			<Outlet/>
-		</>
-	)
+  return (
+    <>
+      <Outlet/>
+    </>
+  )
 }
 
 // ~src/layouts/AdminLayout.tsx
 import { Outlet } from "react-router-dom"
 
 export default function AdminLayout() {
-	return (
-		<>
-			<Outlet/>
-		</>
-	)
+  return (
+    <>
+      <Outlet/>
+    </>
+  )
 }
 ```
